@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: MagicMirror²
+# Runs MagicMirror²
+# ==============================================================================
+bashio::log.info "Starting MagicMirror² server..."
+cd /opt || bashio::exit "Could not change dir."
+exec node serveronly
