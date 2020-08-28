@@ -1,10 +1,6 @@
 ---
 channel: stable
 addons:
-  magicmirror:
-    repository: hassio-addons/addon-magicmirror
-    target: magicmirror
-    image: hassioaddons/adb-{arch}
   adb:
     repository: hassio-addons/addon-adb
     target: adb
@@ -93,6 +89,10 @@ addons:
     repository: hassio-addons/addon-lutron-cert
     target: lutron-cert
     image: hassioaddons/lutron-cert-{arch}
+  magicmirror:
+    repository: hassio-addons/addon-magicmirror
+    target: magicmirror
+    image: hassioaddons/adb-{arch}
   matrix:
     repository: hassio-addons/addon-matrix
     target: matrix
