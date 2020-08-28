@@ -1,6 +1,10 @@
 ---
 channel: stable
 addons:
+  magicmirror:
+    repository: hassio-addons/addon-magicmirror
+    target: adb
+    image: hassioaddons/adb-{arch}
   adb:
     repository: hassio-addons/addon-adb
     target: adb
